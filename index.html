@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Historical Investment Returns by Asset Class</h1>
+
+    &nbsp;
+
+    <h2>Periodic Table of Annual Returns</h2>
+
+    <div id="periodicTableDiv">
+
+    </div>
+
+    <p id="periodicTableNotes">Note: 2020 metrics are year-to-date (YTD) as of Sept. 30, 2020.</p>
+
+    &nbsp;
+
+    <div id="allReturnsLineChartDiv">
+        <canvas id="allReturnsLineChart"></canvas>
+    </div>
+
+    &nbsp;
+
+    <h2>Year in Focus</h2>
+
+    <div id="singleYearSelectionDiv">
+        <table>
+            <tr>
+                <td class="selectionLabel">Year:</td>
+                <td>
+                    <select id="yearSelection" class="userInput select-style">
+                        
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    &nbsp;
+
+    <div id="singleYearChartDiv">
+        <canvas id="singleYearChart"></canvas>
+    </div>
+
+    &nbsp;
+
+    <h2>Single Asset Class Deep Dive</h2>
+
+    <div id="singleIndexSelectionDiv">
+        <table>
+            <tr>
+                <td class="selectionLabel">Asset Class:</td>
+                <td>
+                    <select id="assetSelection" class="userInput select-style">
+                        <option class="assetSelectionOption" value="0">US Large Cap Stocks</option>
+                        <option class="assetSelectionOption" value="1">US Small Cap Stocks</option>
+                        <option class="assetSelectionOption" value="2">REIT</option>
+                        <option class="assetSelectionOption" value="3">International Developed Stocks</option>
+                        <option class="assetSelectionOption" value="4">Emerging Market Stocks</option>
+                        <option class="assetSelectionOption" value="5">All US Bonds</option>
+                        <option class="assetSelectionOption" value="6">Cash (T-Bill)</option>
+                        <option class="assetSelectionOption" value="7">Gold</option>
+                        <option class="assetSelectionOption" value="8">High-Yield US Bonds</option>
+                        <option class="assetSelectionOption" value="9">International Bonds</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    &nbsp;
+
+    <table id="singleIndexMetricTable">
+        <tr>
+            <th colspan="2">Summary Metrics</th>
+        </tr>
+        <tr>
+            <td>Average</td>
+            <td id="averageCell" class="singleIndexMetricValue"></td>
+        </tr>
+        <tr>
+            <td>Median</td>
+            <td id="medianCell" class="singleIndexMetricValue"></td>
+        </tr>
+        <tr>
+            <td>CAGR</td>
+            <td id="CAGRCell" class="singleIndexMetricValue"></td>
+        </tr>
+        <tr>
+            <td>Max</td>
+            <td id="maxCell" class="singleIndexMetricValue"></td>
+        </tr>
+        <tr>
+            <td>Min</td>
+            <td id="minCell" class="singleIndexMetricValue"></td>
+        </tr>
+        <tr>
+            <td>Standard Deviation</td>
+            <td id="stdDevCell" class="singleIndexMetricValue"></td>
+        </tr>
+    </table>
+
+    &nbsp;
+
+    <div id="annualReturnsChartDiv">
+        <canvas id="annualReturnsChart"></canvas>
+    </div>
+
+    &nbsp;
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
+    <script src="investmentReturnsScript.js"></script>
+
+</body>
+
+</html>
