@@ -1,6 +1,7 @@
 html {
     font-family:helvetica;
     font-size:15px;
+    margin:auto;
 }
 
 table {
@@ -18,6 +19,19 @@ th {
 	background-color: #e9e9e9;
 }
 
+#assetDescriptionTable {
+    color: black;
+}
+
+#assetDescriptionTable td {
+    border: 1px solid #e9e9e9;
+    padding: 8px 5px 8px 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    border-collapse: collapse;  
+}
+
 #periodicTable td {
     border: 1px solid white;
     padding: 1px 3px 1px 3px;
@@ -25,6 +39,12 @@ th {
     vertical-align: middle;
     background-color: white;
     border-collapse: collapse;
+}
+
+#descriptionColumn {
+    text-align: left !important;
+    vertical-align: left !important;
+    max-width:400px;
 }
 
 #periodicTable th {
@@ -85,7 +105,13 @@ input:hover{
     filter: opacity(.35);
 }
 
-#annualReturnsChartDiv, #allReturnsLineChartDiv, #singleYearChartDiv {
+.assetDescriptionCell{
+    -webkit-filter: opacity(.75);
+    filter: opacity(.75);
+    font-weight:bold;
+}
+
+#annualReturnsChartDiv, #CAGRReturnsChartDiv, #allReturnsLineChartDiv, #singleYearChartDiv {
     width:95%;
     max-width:1200px;
     padding:6px;
@@ -101,7 +127,7 @@ input:hover{
     box-shadow: 4px 4px 10px grey;
 }
 
-.select-style, input {
+.select-style {
     border-bottom: 2px solid rgb(0, 183, 255);
     border-left:none;
     border-top:none;
@@ -123,6 +149,12 @@ input:hover{
     outline: none;
 }
 
+
+#periodicTableDiv {
+    max-width:95%;
+    margin:auto;
+}
+
 #periodicTable{
     margin: auto;
 
@@ -130,7 +162,7 @@ input:hover{
     border-collapse: collapse;
 
     overflow-x:scroll;
-    width:95vw;
+    width:95%;
     /* max-width:1400px; */
 
     overflow-y:scroll;
@@ -140,6 +172,14 @@ input:hover{
     display:block;
 
     font-size:0.80em;
+    
+    color: black;
+}
+
+.periodicTableCAGRCol{
+    border-left: 2px solid rgb(0, 30, 87) !important;
+    border-right: 2px solid rgb(0, 30, 87) !important;
+    
 }
 
 ::-webkit-scrollbar {
@@ -173,6 +213,56 @@ input:hover{
 
 .selectionLabel{
     padding-right: 8px;
+}
+
+
+#correlationTableDiv {
+    width:95%;
+    overflow-x: scroll;
+}
+
+
+#correlationTable {
+    margin: auto;
+
+    margin-top:3px;
+    border-collapse: collapse;
+
+    /* max-width:550px;
+    max-width:800px; */
+
+    overflow-y:scroll;
+    /* max-height:900px; */
+
+    text-align: center;
+
+}
+
+#correlationTable th {
+    border: 2px solid white;    
+    padding: 2px;
+    text-align: center;
+    vertical-align:middle;
+	border-collapse: collapse;
+    background-color: #e9e9e9;
+    height:50px;
+    max-width:50px;
+    min-width:50px;
+    font-weight:normal;
+    font-size:0.85em;
+}
+
+#correlationTable td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1px 3px 1px 3px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    border-collapse: collapse;
+    /*width:60px;
+    height:35px;*/
+    font-weight: bold;
+    font-size:0.90em;
 }
 
 

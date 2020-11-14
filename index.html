@@ -10,15 +10,133 @@
 
     &nbsp;
 
-    <h2>Periodic Table of Annual Returns</h2>
+    <p>This tool shows the historical investment returns of a broad set of "asset classes" -- stocks, bonds, and beyond.</p>
+    <p>Understanding the potential range of returns on your investments is a critical input to any financial plan or decision, whether that's renting versus buying your home, forecasting your time to retirement, or just getting a general grip on where your financial trajectory is headed.</p>
+    <p>For those who've done some digging into historical investment returns, you've likely come across performance charts for the S&P 500 -- an index that tracks the performance of the 500 largest publicly-traded companies in the U.S.</p>
+    <p>While the S&P 500 index covers the companies that feature prominently in business news (Apple, Amazon, Microsoft, Google, JP Morgan, and the like), there's a whole wide world out there!</p>
+    <p>Broadly speaking, the 'universe' of investment options can be broken down into the following:</p>
+    <ul>
+        <li>Underlying asset type -- whether that's stocks, bonds / fixed income, or other assets such as real estate, hard assets, commodities, etc.</li>
+        <li>Country -- developed countries (such as the U.S. / Canada / Germany) versus emerging markets (such as China / India / Brazil / Russia)</li>
+        <li>Risk level -- stocks of large mature companies versus small growing firms, government bonds versus higher risk / higher yield corporate bonds</li>
+    </ul>
+
+    <p>Paul Simon sang about the "50 ways to leave your lover", but surely he forgot about the 100+ ways to build a portfolio...</p>
+
+    <p>In this analysis, we'll stretch ourselves beyond the S&P 500, and take into account the following asset classes.</p>
+
+    &nbsp;
+
+    <div id="assetDescriptionTableDiv">
+
+        <table id="assetDescriptionTable">
+            <tr>
+                <th>Asset Class</th>
+                <th>Ticker</th>
+                <th id="descriptionColumn">Description</th>
+                <th># of Holdings</th>
+                <th>Risk Potential<br>(out of 5)</th>
+            </tr>
+            <tr>
+                <td id="assetDescription1" class="assetDescriptionCell">US Large Cap Stocks</td>
+                <td>VFIAX</td>
+                <td id="descriptionColumn">The S&P 500 index. 500 of the largest U.S. companies, which span many different industries and account for about three-fourths of the U.S. stock market’s value</td>
+                <td>500 stocks</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td id="assetDescription2" class="assetDescriptionCell">US Small Cap Stocks</td>
+                <td>VSMAX</td>
+                <td id="descriptionColumn">Broad exposure to small-sized U.S. companies</td>
+                <td>~1,400 stocks</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td id="assetDescription3" class="assetDescriptionCell">International Developed Stocks</td>
+                <td>VTMGX</td>
+                <td id="descriptionColumn">Exposure to large-, mid-, and small-capitalization companies in developed markets outside of the United States</td>
+                <td>~4,000 stocks</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td id="assetDescription4" class="assetDescriptionCell">Emerging Market Stocks</td>
+                <td>VEMAX</td>
+                <td id="descriptionColumn">Stocks of companies located in emerging markets around the world, such as Brazil, Russia, India, Taiwan, and China</td>
+                <td>~5,000 stocks</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td id="assetDescription5" class="assetDescriptionCell">All US Bonds</td>
+                <td>VBTLX</td>
+                <td id="descriptionColumn">Exposure to U.S. investment-grade bonds. The fund invests in U.S. Treasuries and mortgage-backed securities of all maturities</td>
+                <td>~10,000 bonds</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td id="assetDescription6" class="assetDescriptionCell">Hi-Yield US Bonds</td>
+                <td>VWEAX</td>
+                <td id="descriptionColumn">Diversified portfolio of medium- and lower-quality U.S. corporate bonds, often referred to as “junk bonds".</td>
+                <td>~600 bonds</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td id="assetDescription7" class="assetDescriptionCell">International Bonds</td>
+                <td>VTABX</td>
+                <td id="descriptionColumn">Exposure to non-U.S. investment-grade bonds. The fund seeks to track the performance of an index that includes international government, agency, and corporate securities, mostly from developed countries, but also some emerging markets countries</td>
+                <td>~6,000 bonds</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td id="assetDescription8" class="assetDescriptionCell">Cash (T-Bill)</td>
+                <td>VUSXX</td>
+                <td id="descriptionColumn">Invests in short-term U.S. Treasury bills, and other debt issued by federal agencies that are sponsored, guaranteed, or owned by the federal government</td>
+                <td>~40</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td id="assetDescription9" class="assetDescriptionCell">REIT</td>
+                <td>VGSLX</td>
+                <td id="descriptionColumn">This fund invests in real estate investment trusts—companies that purchase office buildings, hotels, and other real estate property</td>
+                <td>~200 REITS</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td id="assetDescription10" class="assetDescriptionCell">Gold</td>
+                <td>IAU</td>
+                <td id="descriptionColumn">Seeks to reflect the performance of the price of gold (in $USD)</td>
+                <td>1</td>
+                <td>n/a</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    &nbsp;
+
+    <p>For each of the 10 asset classes, we'll be working with the annual real total returns from 1985 to 2020 -- a total period of 36 years.</p>
+
+    <img src="https://themeasureofaplan.com/wp-content/uploads/2020/11/Asset-Class-Raw-Returns.png">
+
+    <p>There's quite a bit of data to process, and showing the raw numbers in a table isn't the most helpful for digesting the information.</p>
+
+    <p>So without further ado, let's get started on slicing, dicing, and prettying up the data.</p>
+
+    &nbsp;
+
+    <h2>Periodic Table of Annual Real Returns</h2>
+
+    <p>Hover over the cells in the table to highlight the returns of a single asset class. Scroll left to see data going back until 1985.</p>
 
     <div id="periodicTableDiv">
 
     </div>
 
-    <p id="periodicTableNotes">Note: 2020 metrics are year-to-date (YTD) as of Sept. 30, 2020.</p>
+    <p id="periodicTableNotes">Note: The average in the last column is based on the compounded annual growth rate (CAGR) for each asset class. 2020 metrics are year-to-date (YTD) as of Oct. 31, 2020, assuming an inflation rate of 1.2% in 2020.</p>
 
     &nbsp;
+
+    <p>Click the asset class labels in the legend below to toggle them on/off from displaying in the chart.</p>
 
     <div id="allReturnsLineChartDiv">
         <canvas id="allReturnsLineChart"></canvas>
@@ -60,14 +178,14 @@
                     <select id="assetSelection" class="userInput select-style">
                         <option class="assetSelectionOption" value="0">US Large Cap Stocks</option>
                         <option class="assetSelectionOption" value="1">US Small Cap Stocks</option>
-                        <option class="assetSelectionOption" value="2">REIT</option>
-                        <option class="assetSelectionOption" value="3">International Developed Stocks</option>
-                        <option class="assetSelectionOption" value="4">Emerging Market Stocks</option>
-                        <option class="assetSelectionOption" value="5">All US Bonds</option>
-                        <option class="assetSelectionOption" value="6">Cash (T-Bill)</option>
-                        <option class="assetSelectionOption" value="7">Gold</option>
-                        <option class="assetSelectionOption" value="8">High-Yield US Bonds</option>
-                        <option class="assetSelectionOption" value="9">International Bonds</option>
+                        <option class="assetSelectionOption" value="2">International Developed Stocks</option>
+                        <option class="assetSelectionOption" value="3">Emerging Market Stocks</option>
+                        <option class="assetSelectionOption" value="4">All US Bonds</option>
+                        <option class="assetSelectionOption" value="5">High-Yield US Bonds</option>
+                        <option class="assetSelectionOption" value="6">International Bonds</option>
+                        <option class="assetSelectionOption" value="7">Cash (T-Bill)</option>
+                        <option class="assetSelectionOption" value="8">REIT</option>
+                        <option class="assetSelectionOption" value="9">Gold</option>
                     </select>
                 </td>
             </tr>
@@ -112,9 +230,183 @@
         <canvas id="annualReturnsChart"></canvas>
     </div>
 
+    <div id="CAGRReturnsChartDiv">
+        <canvas id="CAGRReturnsChart"></canvas>
+    </div>
+
     &nbsp;
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
+    <h2>Correlations Between Asset Class Investment Returns</h2>
+
+    <div id="correlationTableDiv">
+        <table id="correlationTable">
+            <tr>
+                <th></th>
+                <th>US Large Cap Stocks</th>
+                <th>US Small Cap Stocks</th>
+                <th>Int'l Developed Stocks</th>
+                <th>Emerging Market Stocks</th>
+                <th>All US Bonds</th>
+                <th>High-Yield US Bonds</th>
+                <th>Int'l Bonds</th>
+                <th>Cash (T-Bill)</th>
+                <th>REIT</th>
+                <th>Gold</th>
+            </tr>
+            <tr>
+                <th>US Large Cap Stocks</th>
+                <td id="cell00"></td>
+                <td id="cell01"></td>
+                <td id="cell02"></td>
+                <td id="cell03"></td>
+                <td id="cell04"></td>
+                <td id="cell05"></td>
+                <td id="cell06"></td>
+                <td id="cell07"></td>
+                <td id="cell08"></td>
+                <td id="cell09"></td>            
+            </tr>
+            <tr>
+                <th>US Small Cap Stocks</th>
+                <td id="cell10"></td>
+                <td id="cell11"></td>
+                <td id="cell12"></td>
+                <td id="cell13"></td>
+                <td id="cell14"></td>
+                <td id="cell15"></td>
+                <td id="cell16"></td>
+                <td id="cell17"></td>
+                <td id="cell18"></td>
+                <td id="cell19"></td>            
+            </tr>
+            <tr>
+                <th>Int'l Developed Stocks</th>
+                <td id="cell20"></td>
+                <td id="cell21"></td>
+                <td id="cell22"></td>
+                <td id="cell23"></td>
+                <td id="cell24"></td>
+                <td id="cell25"></td>
+                <td id="cell26"></td>
+                <td id="cell27"></td>
+                <td id="cell28"></td>
+                <td id="cell29"></td>           
+            </tr>
+            <tr>
+                <th>Emerging Market Stocks</th>
+                <td id="cell30"></td>
+                <td id="cell31"></td>
+                <td id="cell32"></td>
+                <td id="cell33"></td>
+                <td id="cell34"></td>
+                <td id="cell35"></td>
+                <td id="cell36"></td>
+                <td id="cell37"></td>
+                <td id="cell38"></td>
+                <td id="cell39"></td>           
+            </tr>
+            <tr>
+                <th>All US Bonds</th>
+                <td id="cell40"></td>
+                <td id="cell41"></td>
+                <td id="cell42"></td>
+                <td id="cell43"></td>
+                <td id="cell44"></td>
+                <td id="cell45"></td>
+                <td id="cell46"></td>
+                <td id="cell47"></td>
+                <td id="cell48"></td>
+                <td id="cell49"></td>            
+            </tr>
+            <tr>
+                <th>High-Yield US Bonds</th>
+                <td id="cell50"></td>
+                <td id="cell51"></td>
+                <td id="cell52"></td>
+                <td id="cell53"></td>
+                <td id="cell54"></td>
+                <td id="cell55"></td>
+                <td id="cell56"></td>
+                <td id="cell57"></td>
+                <td id="cell58"></td>
+                <td id="cell59"></td>            
+            </tr>
+            <tr>
+                <th>Int'l Bonds</th>
+                <td id="cell60"></td>
+                <td id="cell61"></td>
+                <td id="cell62"></td>
+                <td id="cell63"></td>
+                <td id="cell64"></td>
+                <td id="cell65"></td>
+                <td id="cell66"></td>
+                <td id="cell67"></td>
+                <td id="cell68"></td>
+                <td id="cell69"></td>            
+            </tr>
+            <tr>
+                <th>Cash (T-Bill)</th>
+                <td id="cell70"></td>
+                <td id="cell71"></td>
+                <td id="cell72"></td>
+                <td id="cell73"></td>
+                <td id="cell74"></td>
+                <td id="cell75"></td>
+                <td id="cell76"></td>
+                <td id="cell77"></td>
+                <td id="cell78"></td>
+                <td id="cell79"></td>            
+            </tr>
+            <tr>
+                <th>REIT</th>
+                <td id="cell80"></td>
+                <td id="cell81"></td>
+                <td id="cell82"></td>
+                <td id="cell83"></td>
+                <td id="cell84"></td>
+                <td id="cell85"></td>
+                <td id="cell86"></td>
+                <td id="cell87"></td>
+                <td id="cell88"></td>
+                <td id="cell89"></td>            
+            </tr>
+            <tr>
+                <th>Gold</th>
+                <td id="cell90"></td>
+                <td id="cell91"></td>
+                <td id="cell92"></td>
+                <td id="cell93"></td>
+                <td id="cell94"></td>
+                <td id="cell95"></td>
+                <td id="cell96"></td>
+                <td id="cell97"></td>
+                <td id="cell98"></td>
+                <td id="cell99"></td>            
+            </tr>
+        </table>
+    </div>
+
+    &nbsp;
+
+    <p id="correlationTableNotes">Note: The numbers shown above are correlation coefficients (Pearson's R values) that measure the strength of the relationship between each pair of asset classes. A value of 1 indicates a strong positive relationship; a value of -1 indicates a strong negative relationship; a value of 0 indicates no relationship between the two asset clsses.</p>
+
+    &nbsp;
+
+    <h2>Notes & Sources</h2>
+
+    <p>Data was sourced from Yahoo Finance, Vanguard, iShares, and the Bogleheads forum.</p>
+
+    <p>All data points used in this article can be <a href="https://drive.google.com/drive/u/0/folders/1jPFKOJStuLhd3L9G4vygpw9WZ2wOWxMo" rel="noopener" target="_blank">downloaded here in spreadsheet form</a>.</p>
+
+    &nbsp;
+    &nbsp;
+    <p>--</p>
+    <p><em>Header photo credit: <a href="https://dribbble.com/Eveally" rel="noopener" target="_blank">Leto</a></em></p>
+
+    &nbsp;
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script> -->
     <script src="investmentReturnsScript.js"></script>
 
 </body>
