@@ -64,6 +64,11 @@ th {
     font-weight: bold;
 }
 
+#periodicTableNotes, #correlationTableNotes{
+    font-style: italic;
+    font-size: 0.85em;
+}
+
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgb(194, 194, 194);
@@ -119,7 +124,7 @@ input:hover{
     background-color: white;
     position:relative;
     height:65vh;
-	max-height: 650px;
+	max-height: 550px;
     margin: auto;
 	text-align: center;
     margin-top:15px;
@@ -180,6 +185,11 @@ input:hover{
     border-left: 2px solid rgb(0, 30, 87) !important;
     border-right: 2px solid rgb(0, 30, 87) !important;
     
+}
+
+.periodicTableCAGRColHeader{
+    font-style: italic;
+    font-weight: normal;
 }
 
 ::-webkit-scrollbar {

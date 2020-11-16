@@ -1,7 +1,6 @@
 /*
 Growth of $1
 Custom asset allocation -- add to outputs
-CAGR column for periodic table, last column
 Add code style formatting for highlight text -- light colour shading / darker colour font (same colour) -- e.g., for correlation note
 */
 
@@ -200,8 +199,9 @@ for(i=0; i<numYears+1; i++){
     if(i<numYears){
         yearHeader.textContent = years[i];
     } else{
-        yearHeader.textContent = "Average"+"\n"+"(all years)";
+        yearHeader.textContent = "Average (CAGR, all years)";
         yearHeader.classList.add("periodicTableCAGRCol");
+        yearHeader.classList.add("periodicTableCAGRColHeader");
     }
 
     r1.appendChild(yearHeader);
