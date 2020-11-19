@@ -10,27 +10,28 @@ var largeCapReturns = [0.2643, 0.1678, 0.0026, 0.1130, 0.2553, -0.0889, 0.2635, 
 var smallCapReturns = [0.2619, 0.0448, -0.1272, 0.1967, 0.1104, -0.2284, 0.4094, 0.1487, 0.1553, -0.0310, 0.2555, 0.1432, 0.2250, -0.0416, 0.1991, -0.0583, 0.0159, -0.2181, 0.4307, 0.1623, 0.0394, 0.1292, -0.0273, -0.3606, 0.3272, 0.2600, -0.0549, 0.1622, 0.3578, 0.0669, -0.0434, 0.1590, 0.1384, -0.1101, 0.2452, -0.0554];
 var intlDevReturns = [0.5034, 0.6748, 0.1926, 0.2275, 0.0555, -0.2790, 0.0872, -0.1471, 0.2892, 0.0490, 0.0838, 0.0257, 0.0000, 0.1801, 0.2356, -0.1710, -0.2313, -0.1757, 0.3611, 0.1646, 0.0985, 0.2314, 0.0680, -0.4133, 0.2487, 0.0676, -0.1503, 0.1653, 0.2026, -0.0637, -0.0091, 0.0037, 0.2379, -0.1606, 0.1932, -0.1029];
 var emergingReturns = [0.2292, 0.1037, 0.0934, 0.3389, 0.5694, -0.1607, 0.5448, 0.0779, 0.6941, -0.1013, -0.0193, 0.1210, -0.1822, -0.1942, 0.5735, -0.2993, -0.0436, -0.0958, 0.5474, 0.2214, 0.2769, 0.2627, 0.3364, -0.5280, 0.7152, 0.1724, -0.2101, 0.1682, -0.0643, -0.0015, -0.1596, 0.0946, 0.2867, -0.1618, 0.1762, -0.0068];
+var cdnStockReturns = [0.1983, 0.0461, 0.0163, 0.0683, 0.1540, -0.1886, 0.0790, -0.0343, 0.3029, -0.0040, 0.1248, 0.2554, 0.1420, -0.0257, 0.2836, 0.0407, -0.1321, -0.1569, 0.2422, 0.1214, 0.2143, 0.1545, 0.0723, -0.3379, 0.3337, 0.1484, -0.1075, 0.0635, 0.1166, 0.0897, -0.0974, 0.1931, 0.0707, -0.1069, 0.2025, -0.0714];
 var USBondReturns = [0.1755, 0.1393, -0.0278, 0.0281, 0.0860, 0.0240, 0.1182, 0.0412, 0.0675, -0.0519, 0.1526, 0.0025, 0.0761, 0.0686, -0.0335, 0.0774, 0.0678, 0.0580, 0.0212, 0.0104, -0.0090, 0.0178, 0.0282, 0.0505, 0.0323, 0.0497, 0.0459, 0.0237, -0.0359, 0.0510, -0.0033, 0.0051, 0.0142, -0.0190, 0.0629, 0.0492];
 var hiYieldBondReturns = [0.1753, 0.1559, -0.0171, 0.0875, -0.0263, -0.1126, 0.2517, 0.1102, 0.1508, -0.0427, 0.1620, 0.0602, 0.1003, 0.0394, -0.0019, -0.0412, 0.0133, -0.0058, 0.1510, 0.0519, -0.0049, 0.0569, -0.0183, -0.2126, 0.3558, 0.1087, 0.0416, 0.1251, 0.0309, 0.0390, -0.0201, 0.0904, 0.0492, -0.0469, 0.1332, -0.0046];
 var intlBondReturns = [0.0695, 0.1007, 0.0452, 0.0438, -0.0062, -0.0273, 0.0747, 0.0331, 0.1065, -0.0729, 0.1429, 0.0835, 0.0890, 0.1017, -0.0064, 0.0544, 0.0456, 0.0425, 0.0042, 0.0183, 0.0182, 0.0053, 0.0007, 0.0553, 0.0155, 0.0165, 0.0084, 0.0453, -0.0035, 0.0801, 0.0033, 0.0253, 0.0028, 0.0100, 0.0547, 0.0260];
+var cdnBondReturns = [0.1609, 0.1008, -0.0019, 0.0558, 0.0722, 0.0238, 0.1763, 0.0754, 0.1613, -0.0449, 0.1857, 0.0988, 0.0884, 0.0812, -0.0361, 0.0678, 0.0735, 0.0462, 0.0461, 0.0490, 0.0421, 0.0246, 0.0127, 0.0514, 0.0405, 0.0420, 0.0723, 0.0278, -0.0237, 0.0719, 0.0187, 0.0020, 0.0059, -0.0059, 0.0460, 0.0546];
 var cashReturns = [0.0378, 0.0499, 0.0131, 0.0215, 0.0371, 0.0162, 0.0252, 0.0061, 0.0024, 0.0128, 0.0306, 0.0187, 0.0353, 0.0349, 0.0200, 0.0251, 0.0257, -0.0068, -0.0087, -0.0201, -0.0046, 0.0211, 0.0067, 0.0201, -0.0241, -0.0146, -0.0286, -0.0170, -0.0147, -0.0074, -0.0070, -0.0178, -0.0129, -0.0011, -0.0015, -0.0073];
 var REITReturns = [0.1460, 0.1772, -0.0784, 0.0855, 0.0388, -0.2032, 0.3150, 0.1123, 0.1631, 0.0036, 0.0998, 0.3137, 0.1678, -0.1765, -0.0655, 0.2221, 0.1069, 0.0132, 0.3327, 0.2669, 0.0831, 0.3181, -0.1966, -0.3704, 0.2632, 0.2659, 0.0549, 0.1567, 0.0090, 0.2934, 0.0165, 0.0629, 0.0277, -0.0771, 0.2606, -0.1643];
 var goldReturns = [0.0170, 0.1795, 0.1902, -0.1956, -0.0681, -0.0833, -0.1252, -0.0868, 0.1392, -0.0487, -0.0165, -0.0774, -0.2324, -0.0243, -0.0171, -0.0955, -0.0039, 0.2078, 0.1919, 0.0141, 0.1297, 0.1930, 0.2582, 0.0536, 0.2018, 0.2605, 0.0553, 0.0652, -0.2903, -0.0119, -0.1229, 0.0663, 0.0927, -0.0324, 0.1589, 0.2192];
 
-var allReturnsArray = [largeCapReturns, smallCapReturns, intlDevReturns, emergingReturns, USBondReturns, hiYieldBondReturns, intlBondReturns, cashReturns, REITReturns, goldReturns];
+var allReturnsArray = [largeCapReturns, smallCapReturns, intlDevReturns, emergingReturns, cdnStockReturns, USBondReturns, hiYieldBondReturns, intlBondReturns, cdnBondReturns, cashReturns, REITReturns, goldReturns];
 
 
 var years = ["1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020 YTD"];
 var yearsReverse = years.slice().reverse();
 
-var assetClassLabels = ["US Large Cap Stocks", "US Small Cap Stocks", "Int'l Dev Stocks", "Emerging Mkt Stocks", "All US Bonds", "HiYield US Bonds", "Int'l Bonds", "Cash (TBill)", "REIT", "Gold"];
+var assetClassLabels = ["US Large Cap Stocks", "US Small Cap Stocks", "Int'l Dev Stocks", "Emerging Mkt Stocks", "Cdn Stocks", "All US Bonds", "HiYield US Bonds", "Int'l Bonds", "Cdn Bonds", "Cash (TBill)", "REIT", "Gold"];
 
 var numYears = Number(years.length);
 var numAssets = assetClassLabels.length;
 
 // http://vrl.cs.brown.edu/color
-var colourArray = ["#56ebd3", "#e5196a", "#A476FF", "#218841", "#feafda", "#148fae", "#af641d", "#B8B8B8", "#39f27a","#ffd700"];
-
+var colourArray = ["#56ebd3", "#FF5733", "#A476FF", "#218841", "#C70039", "#BFFE8D", "#148fae", "#af641d", "#FF9898", "#B8B8B8", "#39f27a","#ffd700"];
 
 // https://learnui.design/tools/data-color-picker.html#divergent
 var correlationColourArray = ["#8f1a7a", "#ae5b9a", "#ca91bb", "#e6c8dd", "#ffffff", "#d7f7f7", "#abefee", "#77e6e6", "#10ddde"];
@@ -90,6 +91,9 @@ document.getElementById("assetDescription7").style.backgroundColor = colourArray
 document.getElementById("assetDescription8").style.backgroundColor = colourArray[7];
 document.getElementById("assetDescription9").style.backgroundColor = colourArray[8];
 document.getElementById("assetDescription10").style.backgroundColor = colourArray[9];
+document.getElementById("assetDescription11").style.backgroundColor = colourArray[10];
+document.getElementById("assetDescription12").style.backgroundColor = colourArray[11];
+
 
 getUserInputs();
 addInputEventListeners();
@@ -256,6 +260,10 @@ for(i=0; i<numAssets; i++){
             tableCell.classList.add("cellColour8");
         } else if(currentLabel == assetClassLabels[9]){
             tableCell.classList.add("cellColour9");
+        } else if(currentLabel == assetClassLabels[10]){
+            tableCell.classList.add("cellColour10");
+        } else if(currentLabel == assetClassLabels[11]){
+            tableCell.classList.add("cellColour11");
         }
         tableRow.appendChild(tableCell);
 
@@ -285,7 +293,7 @@ for(i=0;i<periodicTableCells.length;i++) {
     //add default colour to cells
     if(currentClassList.includes("cellColour0")){
         periodicTableCells[i].style.backgroundColor = colourArray[0];
-    } else if(currentClassList.includes("cellColour1")){
+    } else if(currentClassList.includes("cellColour1") && !currentClassList.includes("cellColour10") && !currentClassList.includes("cellColour11")){
         periodicTableCells[i].style.backgroundColor = colourArray[1];
     } else if(currentClassList.includes("cellColour2")){
         periodicTableCells[i].style.backgroundColor = colourArray[2];
@@ -303,20 +311,26 @@ for(i=0;i<periodicTableCells.length;i++) {
         periodicTableCells[i].style.backgroundColor = colourArray[8];
     } else if(currentClassList.includes("cellColour9")){
         periodicTableCells[i].style.backgroundColor = colourArray[9];
+    } else if(currentClassList.includes("cellColour10")){
+        periodicTableCells[i].style.backgroundColor = colourArray[10];
+    } else if(currentClassList.includes("cellColour11")){
+        periodicTableCells[i].style.backgroundColor = colourArray[11];
     }
 
 }
 
 //action taken when user hovers over a cell
 function periodicTableCellHighlight(){
-    var classList = String(this.classList);
-    var highlightClass = classList.slice(classList.length-11,classList.length);
+    var classList = this.classList;
+    var highlightClass = String(classList[classList.length-1]);
     console.log("highlightClass: "+highlightClass);
 
     for(j=0;j<periodicTableCells.length;j++){
         
-        var currentClassList = String(periodicTableCells[j].classList);
-        if(currentClassList.includes(highlightClass)){
+        var currentClassList = periodicTableCells[j].classList;
+        var currentCellColour = String(currentClassList[currentClassList.length-1]);
+
+        if(currentCellColour == highlightClass){
             //do nothing
         } else{
             periodicTableCells[j].classList.add("fadeColour");
@@ -399,8 +413,8 @@ chart = new Chart(ctx, {
                 pointHitRadius: 8,
             },
             {
-                label: "All US Bonds",
-                data: USBondReturns,
+                label: "Canadian Stocks",
+                data: cdnStockReturns,
                 fill: false,
                 borderColor: colourArray[4],
                 borderWidth: 1,
@@ -413,8 +427,8 @@ chart = new Chart(ctx, {
                 pointHitRadius: 8,
             },
             {
-                label: "High-Yield Bonds",
-                data: hiYieldBondReturns,
+                label: "All US Bonds",
+                data: USBondReturns,
                 fill: false,
                 borderColor: colourArray[5],
                 borderWidth: 1,
@@ -427,8 +441,8 @@ chart = new Chart(ctx, {
                 pointHitRadius: 8,
             },
             {
-                label: "International Bonds",
-                data: intlBondReturns,
+                label: "High-Yield Bonds",
+                data: hiYieldBondReturns,
                 fill: false,
                 borderColor: colourArray[6],
                 borderWidth: 1,
@@ -441,8 +455,8 @@ chart = new Chart(ctx, {
                 pointHitRadius: 8,
             },
             {
-                label: "Cash (T-Bill)",
-                data: cashReturns,
+                label: "International Bonds",
+                data: intlBondReturns,
                 fill: false,
                 borderColor: colourArray[7],
                 borderWidth: 1,
@@ -455,8 +469,8 @@ chart = new Chart(ctx, {
                 pointHitRadius: 8,
             },
             {
-                label: "REIT",
-                data: REITReturns,
+                label: "Cdn Bonds",
+                data: cdnBondReturns,
                 fill: false,
                 borderColor: colourArray[8],
                 borderWidth: 1,
@@ -469,14 +483,42 @@ chart = new Chart(ctx, {
                 pointHitRadius: 8,
             },
             {
-                label: "Gold",
-                data: goldReturns,
+                label: "Cash (T-Bill)",
+                data: cashReturns,
                 fill: false,
                 borderColor: colourArray[9],
                 borderWidth: 1,
                 pointBorderColor: colourArray[9],
                 pointBackgroundColor: colourArray[9],
                 backgroundColor: colourArray[9],
+                pointBorderWidth: 1,
+                pointHoverRadius: 7,
+                pointRadius: 6,
+                pointHitRadius: 8,
+            },
+            {
+                label: "REIT",
+                data: REITReturns,
+                fill: false,
+                borderColor: colourArray[10],
+                borderWidth: 1,
+                pointBorderColor: colourArray[10],
+                pointBackgroundColor: colourArray[10],
+                backgroundColor: colourArray[10],
+                pointBorderWidth: 1,
+                pointHoverRadius: 7,
+                pointRadius: 6,
+                pointHitRadius: 8,
+            },
+            {
+                label: "Gold",
+                data: goldReturns,
+                fill: false,
+                borderColor: colourArray[11],
+                borderWidth: 1,
+                pointBorderColor: colourArray[11],
+                pointBackgroundColor: colourArray[11],
+                backgroundColor: colourArray[11],
                 pointBorderWidth: 1,
                 pointHoverRadius: 7,
                 pointRadius: 6,
@@ -590,12 +632,14 @@ function runSingleYearOutput(){
     singlYearReturns[1] = smallCapReturns[selectedYearIndex];
     singlYearReturns[2] = intlDevReturns[selectedYearIndex];
     singlYearReturns[3] = emergingReturns[selectedYearIndex];
-    singlYearReturns[4] = USBondReturns[selectedYearIndex];
-    singlYearReturns[5] = hiYieldBondReturns[selectedYearIndex];
-    singlYearReturns[6] = intlBondReturns[selectedYearIndex];
-    singlYearReturns[7] = cashReturns[selectedYearIndex];
-    singlYearReturns[8] = REITReturns[selectedYearIndex];
-    singlYearReturns[9] = goldReturns[selectedYearIndex];
+    singlYearReturns[4] = cdnStockReturns[selectedYearIndex];
+    singlYearReturns[5] = USBondReturns[selectedYearIndex];
+    singlYearReturns[6] = hiYieldBondReturns[selectedYearIndex];
+    singlYearReturns[7] = intlBondReturns[selectedYearIndex];
+    singlYearReturns[8] = cdnBondReturns[selectedYearIndex];
+    singlYearReturns[9] = cashReturns[selectedYearIndex];
+    singlYearReturns[10] = REITReturns[selectedYearIndex];
+    singlYearReturns[11] = goldReturns[selectedYearIndex];
 
 
 
@@ -736,8 +780,6 @@ function runSingleAssetOutput(){
     //draw annual return chart with chart.js
     var ctx3 = document.getElementById('annualReturnsChart').getContext('2d');
 
-    //need to make this a drop down menu to choose asset class
-
     if(assetSelectionValue == 0){
         annualReturns = largeCapReturns;
         chartTitleString = "US Large Cap Stocks";
@@ -751,21 +793,27 @@ function runSingleAssetOutput(){
         annualReturns = emergingReturns;
         chartTitleString = "Emerging Market Stocks";
     } else if(assetSelectionValue == 4){
+        annualReturns = cdnStockReturns;
+        chartTitleString = "Canadian Stocks";
+    } else if(assetSelectionValue == 5){
         annualReturns = USBondReturns;
         chartTitleString = "All US Bonds";
-    } else if(assetSelectionValue == 5){
+    } else if(assetSelectionValue == 6){
         annualReturns = hiYieldBondReturns;
         chartTitleString = "High-Yield Bonds";
-    } else if(assetSelectionValue == 6){
+    } else if(assetSelectionValue == 7){
         annualReturns = intlBondReturns;
         chartTitleString = "International Bonds";
-    } else if(assetSelectionValue == 7){
+    } else if(assetSelectionValue == 8){
+        annualReturns = cdnBondReturns;
+        chartTitleString = "Canadian Bonds";
+    }  else if(assetSelectionValue == 9){
         annualReturns = cashReturns;
         chartTitleString = "Cash (T-Bill)";
-    }  else if(assetSelectionValue == 8){
+    }  else if(assetSelectionValue == 10){
         annualReturns = REITReturns;
         chartTitleString = "REIT";
-    } else if(assetSelectionValue == 9){
+    } else if(assetSelectionValue == 11){
         annualReturns = goldReturns;
         chartTitleString = "Gold";
     }
@@ -1354,11 +1402,14 @@ function runSingleAssetOutput(){
 }
 
 function runCorrelationOutput(){
+
+    var currentCounter = 0;
+
     for(i=0; i<numAssets; i++){
         for(j=0; j<numAssets; j++){
 
             var currentRValue;
-            var currentCellID = "cell"+i+j;
+            var currentCellID = "cell"+currentCounter;
             var currentCell = document.getElementById(currentCellID);
 
             if(i==j){
@@ -1397,6 +1448,8 @@ function runCorrelationOutput(){
             }
 
             correlationsArray.push(currentRValue);
+
+            currentCounter ++;
         }
     }
     console.log("Correlations Array: "+correlationsArray);

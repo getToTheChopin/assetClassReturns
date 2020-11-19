@@ -15,7 +15,7 @@
     <ul>
         <li>What were the best (and worst) investments of 2020?</li>
         <li>Is any asset class consistently outperforming the rest?</li>
-        <li>How do different asset classes compare in terms of long-term averages, mininimum / maximum returns, and volatility?</li>
+        <li>How do different asset classes compare in terms of long-term averages, minimum / maximum returns, and volatility?</li>
         <li>What is the correlation level between assets? Do bonds perform well when stocks go down (and vice versa)?</li>
     </ul>
     <p>This analysis is all about understanding how different investments have performed in the past, so that you can chart out an informed path ahead.</p>
@@ -53,7 +53,7 @@
             <tr>
                 <td id="assetDescription1" class="assetDescriptionCell">US Large Cap Stocks</td>
                 <td>VFIAX</td>
-                <td id="descriptionColumn">The S&P 500 index. 500 of the largest U.S. companies, which span many different industries and account for about three-fourths of the U.S. stock market’s value</td>
+                <td id="descriptionColumn">The S&P 500 index. 500 of the largest U.S. companies, which span many different industries and account for ~75% of the U.S. stock market’s value</td>
                 <td>500 stocks</td>
                 <td>4</td>
             </tr>
@@ -79,42 +79,56 @@
                 <td>5</td>
             </tr>
             <tr>
-                <td id="assetDescription5" class="assetDescriptionCell">All US Bonds</td>
+                <td id="assetDescription5" class="assetDescriptionCell">Canadian Stocks</td>
+                <td>XIC</td>
+                <td id="descriptionColumn">Covers ~95% of the Canadian stock market. Canada's version of the S&P 500.</td>
+                <td>~200 stocks</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td id="assetDescription6" class="assetDescriptionCell">All US Bonds</td>
                 <td>VBTLX</td>
                 <td id="descriptionColumn">Exposure to U.S. investment-grade bonds. The fund invests in U.S. Treasuries and mortgage-backed securities of all maturities</td>
                 <td>~10,000 bonds</td>
                 <td>2</td>
             </tr>
             <tr>
-                <td id="assetDescription6" class="assetDescriptionCell">Hi-Yield US Bonds</td>
+                <td id="assetDescription7" class="assetDescriptionCell">Hi-Yield US Bonds</td>
                 <td>VWEAX</td>
                 <td id="descriptionColumn">Diversified portfolio of medium- and lower-quality U.S. corporate bonds, often referred to as “junk bonds".</td>
                 <td>~600 bonds</td>
                 <td>3</td>
             </tr>
             <tr>
-                <td id="assetDescription7" class="assetDescriptionCell">International Bonds</td>
+                <td id="assetDescription8" class="assetDescriptionCell">International Bonds</td>
                 <td>VTABX</td>
-                <td id="descriptionColumn">Exposure to non-U.S. investment-grade bonds. The fund seeks to track the performance of an index that includes international government, agency, and corporate securities, mostly from developed countries, but also some emerging markets countries</td>
+                <td id="descriptionColumn">Exposure to non-U.S. investment-grade bonds. Track the performance of an index that includes international government, agency, and corporate bonds, mostly from developed countries, but also some emerging markets countries</td>
                 <td>~6,000 bonds</td>
                 <td>2</td>
             </tr>
             <tr>
-                <td id="assetDescription8" class="assetDescriptionCell">Cash (T-Bill)</td>
+                <td id="assetDescription9" class="assetDescriptionCell">Canadian Bonds</td>
+                <td>ZAG</td>
+                <td id="descriptionColumn">Exposure to Canadian investment-grade bonds -- consisting of Federal, Provincial and Corporate bonds.</td>
+                <td>~1,200 bonds</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td id="assetDescription10" class="assetDescriptionCell">Cash (T-Bill)</td>
                 <td>VUSXX</td>
-                <td id="descriptionColumn">Invests in short-term U.S. Treasury bills, and other debt issued by federal agencies that are sponsored, guaranteed, or owned by the federal government</td>
+                <td id="descriptionColumn">Invests in short-term U.S. Treasury bills, and other debts that are sponsored, guaranteed, or owned by the federal government</td>
                 <td>~40</td>
                 <td>1</td>
             </tr>
             <tr>
-                <td id="assetDescription9" class="assetDescriptionCell">REIT</td>
+                <td id="assetDescription11" class="assetDescriptionCell">REIT</td>
                 <td>VGSLX</td>
-                <td id="descriptionColumn">This fund invests in real estate investment trusts—companies that purchase office buildings, hotels, and other real estate property</td>
+                <td id="descriptionColumn">Invests in real estate investment trusts — companies that purchase office buildings, hotels, and other property</td>
                 <td>~200 REITS</td>
                 <td>4</td>
             </tr>
             <tr>
-                <td id="assetDescription10" class="assetDescriptionCell">Gold</td>
+                <td id="assetDescription12" class="assetDescriptionCell">Gold</td>
                 <td>IAU</td>
                 <td id="descriptionColumn">Seeks to reflect the performance of the price of gold (in $USD)</td>
                 <td>1</td>
@@ -127,9 +141,9 @@
 
     &nbsp;
 
-    <p>For each of the 10 asset classes, we'll be working with the annual returns from 1985 to 2020 -- a total period of 36 years. Note that all returns in this analysis are the "real total return" values -- meaning that they are adjusted to take into account inflation, and the re-investment of dividends.</p>
+    <p>For each of the 12 asset classes, we'll be working with the annual returns from 1985 to 2020 -- a total period of 36 years. Note that all returns in this analysis are the "real total return" values -- meaning that they are adjusted to take into account inflation, and the re-investment of dividends.</p>
 
-    <img src="https://themeasureofaplan.com/wp-content/uploads/2020/11/Asset-Class-Raw-Returns.png">
+    <img src="https://themeasureofaplan.com/wp-content/uploads/2020/11/Asset-Class-Raw-Returns-v2.png">
 
     <p>There's quite a bit of data to process, and showing the raw numbers in a table isn't super helpful for digesting the information.</p>
 
@@ -206,12 +220,14 @@
                         <option class="assetSelectionOption" value="1">US Small Cap Stocks</option>
                         <option class="assetSelectionOption" value="2">International Developed Stocks</option>
                         <option class="assetSelectionOption" value="3">Emerging Market Stocks</option>
-                        <option class="assetSelectionOption" value="4">All US Bonds</option>
-                        <option class="assetSelectionOption" value="5">High-Yield US Bonds</option>
-                        <option class="assetSelectionOption" value="6">International Bonds</option>
-                        <option class="assetSelectionOption" value="7">Cash (T-Bill)</option>
-                        <option class="assetSelectionOption" value="8">REIT</option>
-                        <option class="assetSelectionOption" value="9">Gold</option>
+                        <option class="assetSelectionOption" value="4">Canadian Stocks</option>
+                        <option class="assetSelectionOption" value="5">All US Bonds</option>
+                        <option class="assetSelectionOption" value="6">High-Yield US Bonds</option>
+                        <option class="assetSelectionOption" value="7">International Bonds</option>
+                        <option class="assetSelectionOption" value="8">Canadian Bonds</option>
+                        <option class="assetSelectionOption" value="9">Cash (T-Bill)</option>
+                        <option class="assetSelectionOption" value="10">REIT</option>
+                        <option class="assetSelectionOption" value="11">Gold</option>
                     </select>
                 </td>
             </tr>
@@ -281,30 +297,32 @@
                 <th>US Small Cap Stocks</th>
                 <th>Int'l Developed Stocks</th>
                 <th>Emerging Market Stocks</th>
+                <th>Canadian Stocks</th>
                 <th>All US Bonds</th>
                 <th>High-Yield US Bonds</th>
                 <th>Int'l Bonds</th>
+                <th>Canadian Bonds</th>
                 <th>Cash (T-Bill)</th>
                 <th>REIT</th>
                 <th>Gold</th>
             </tr>
             <tr>
                 <th>US Large Cap Stocks</th>
-                <td id="cell00"></td>
-                <td id="cell01"></td>
-                <td id="cell02"></td>
-                <td id="cell03"></td>
-                <td id="cell04"></td>
-                <td id="cell05"></td>
-                <td id="cell06"></td>
-                <td id="cell07"></td>
-                <td id="cell08"></td>
-                <td id="cell09"></td>            
+                <td id="cell0"></td>
+                <td id="cell1"></td>
+                <td id="cell2"></td>
+                <td id="cell3"></td>
+                <td id="cell4"></td>
+                <td id="cell5"></td>
+                <td id="cell6"></td>
+                <td id="cell7"></td>
+                <td id="cell8"></td>
+                <td id="cell9"></td>
+                <td id="cell10"></td>            
+                <td id="cell11"></td>                        
             </tr>
             <tr>
                 <th>US Small Cap Stocks</th>
-                <td id="cell10"></td>
-                <td id="cell11"></td>
                 <td id="cell12"></td>
                 <td id="cell13"></td>
                 <td id="cell14"></td>
@@ -312,122 +330,188 @@
                 <td id="cell16"></td>
                 <td id="cell17"></td>
                 <td id="cell18"></td>
-                <td id="cell19"></td>            
+                <td id="cell19"></td>
+                <td id="cell20"></td>
+                <td id="cell21"></td> 
+                <td id="cell22"></td>            
+                <td id="cell23"></td>                       
             </tr>
             <tr>
                 <th>Int'l Developed Stocks</th>
-                <td id="cell20"></td>
-                <td id="cell21"></td>
-                <td id="cell22"></td>
-                <td id="cell23"></td>
                 <td id="cell24"></td>
                 <td id="cell25"></td>
                 <td id="cell26"></td>
                 <td id="cell27"></td>
                 <td id="cell28"></td>
-                <td id="cell29"></td>           
-            </tr>
-            <tr>
-                <th>Emerging Market Stocks</th>
+                <td id="cell29"></td>
                 <td id="cell30"></td>
                 <td id="cell31"></td>
                 <td id="cell32"></td>
                 <td id="cell33"></td>
-                <td id="cell34"></td>
-                <td id="cell35"></td>
+                <td id="cell34"></td>                      
+                <td id="cell35"></td>                                            
+            </tr>
+            <tr>
+                <th>Emerging Market Stocks</th>
                 <td id="cell36"></td>
                 <td id="cell37"></td>
                 <td id="cell38"></td>
-                <td id="cell39"></td>           
+                <td id="cell39"></td>
+                <td id="cell40"></td>           
+                <td id="cell41"></td>           
+                <td id="cell42"></td>           
+                <td id="cell43"></td>           
+                <td id="cell44"></td>           
+                <td id="cell45"></td>           
+                <td id="cell46"></td>           
+                <td id="cell47"></td>           
+            </tr>
+            <tr>
+                <th>Canadian Stocks</th>
+                <td id="cell48"></td>
+                <td id="cell49"></td>
+                <td id="cell50"></td>
+                <td id="cell51"></td>
+                <td id="cell52"></td>           
+                <td id="cell53"></td>           
+                <td id="cell54"></td>           
+                <td id="cell55"></td>           
+                <td id="cell56"></td>           
+                <td id="cell57"></td>           
+                <td id="cell58"></td>           
+                <td id="cell59"></td>             
             </tr>
             <tr>
                 <th>All US Bonds</th>
-                <td id="cell40"></td>
-                <td id="cell41"></td>
-                <td id="cell42"></td>
-                <td id="cell43"></td>
-                <td id="cell44"></td>
-                <td id="cell45"></td>
-                <td id="cell46"></td>
-                <td id="cell47"></td>
-                <td id="cell48"></td>
-                <td id="cell49"></td>            
-            </tr>
-            <tr>
-                <th>High-Yield US Bonds</th>
-                <td id="cell50"></td>
-                <td id="cell51"></td>
-                <td id="cell52"></td>
-                <td id="cell53"></td>
-                <td id="cell54"></td>
-                <td id="cell55"></td>
-                <td id="cell56"></td>
-                <td id="cell57"></td>
-                <td id="cell58"></td>
-                <td id="cell59"></td>            
-            </tr>
-            <tr>
-                <th>Int'l Bonds</th>
                 <td id="cell60"></td>
                 <td id="cell61"></td>
                 <td id="cell62"></td>
                 <td id="cell63"></td>
-                <td id="cell64"></td>
-                <td id="cell65"></td>
-                <td id="cell66"></td>
-                <td id="cell67"></td>
-                <td id="cell68"></td>
-                <td id="cell69"></td>            
+                <td id="cell64"></td>           
+                <td id="cell65"></td>           
+                <td id="cell66"></td>           
+                <td id="cell67"></td>           
+                <td id="cell68"></td>           
+                <td id="cell69"></td>           
+                <td id="cell70"></td>           
+                <td id="cell71"></td>                
             </tr>
             <tr>
-                <th>Cash (T-Bill)</th>
-                <td id="cell70"></td>
-                <td id="cell71"></td>
+                <th>High-Yield US Bonds</th>
                 <td id="cell72"></td>
                 <td id="cell73"></td>
                 <td id="cell74"></td>
                 <td id="cell75"></td>
-                <td id="cell76"></td>
-                <td id="cell77"></td>
-                <td id="cell78"></td>
-                <td id="cell79"></td>            
+                <td id="cell76"></td>           
+                <td id="cell77"></td>           
+                <td id="cell78"></td>           
+                <td id="cell79"></td>           
+                <td id="cell80"></td>           
+                <td id="cell81"></td>           
+                <td id="cell82"></td>           
+                <td id="cell83"></td>            
             </tr>
             <tr>
-                <th>REIT</th>
-                <td id="cell80"></td>
-                <td id="cell81"></td>
-                <td id="cell82"></td>
-                <td id="cell83"></td>
+                <th>Int'l Bonds</th>
                 <td id="cell84"></td>
                 <td id="cell85"></td>
                 <td id="cell86"></td>
                 <td id="cell87"></td>
-                <td id="cell88"></td>
-                <td id="cell89"></td>            
+                <td id="cell88"></td>           
+                <td id="cell89"></td>           
+                <td id="cell90"></td>           
+                <td id="cell91"></td>           
+                <td id="cell92"></td>           
+                <td id="cell93"></td>           
+                <td id="cell94"></td>           
+                <td id="cell95"></td>             
             </tr>
             <tr>
-                <th>Gold</th>
-                <td id="cell90"></td>
-                <td id="cell91"></td>
-                <td id="cell92"></td>
-                <td id="cell93"></td>
-                <td id="cell94"></td>
-                <td id="cell95"></td>
+                <th>Canadian Bonds</th>
                 <td id="cell96"></td>
                 <td id="cell97"></td>
                 <td id="cell98"></td>
-                <td id="cell99"></td>            
+                <td id="cell99"></td>
+                <td id="cell100"></td>           
+                <td id="cell101"></td>           
+                <td id="cell102"></td>           
+                <td id="cell103"></td>           
+                <td id="cell104"></td>           
+                <td id="cell105"></td>           
+                <td id="cell106"></td>           
+                <td id="cell107"></td>            
+            </tr>
+            <tr>
+                <th>Cash (T-Bill)</th>
+                <td id="cell108"></td>
+                <td id="cell109"></td>
+                <td id="cell110"></td>
+                <td id="cell111"></td>
+                <td id="cell112"></td>           
+                <td id="cell113"></td>           
+                <td id="cell114"></td>           
+                <td id="cell115"></td>           
+                <td id="cell116"></td>           
+                <td id="cell117"></td>           
+                <td id="cell118"></td>           
+                <td id="cell119"></td>            
+            </tr>
+            <tr>
+                <th>REIT</th>
+                <td id="cell120"></td>
+                <td id="cell121"></td>
+                <td id="cell122"></td>
+                <td id="cell123"></td>
+                <td id="cell124"></td>           
+                <td id="cell125"></td>           
+                <td id="cell126"></td>           
+                <td id="cell127"></td>           
+                <td id="cell128"></td>           
+                <td id="cell129"></td>           
+                <td id="cell130"></td>           
+                <td id="cell131"></td>         
+            </tr>
+            <tr>
+                <th>Gold</th>
+                <td id="cell132"></td>
+                <td id="cell133"></td>
+                <td id="cell134"></td>
+                <td id="cell135"></td>
+                <td id="cell136"></td>           
+                <td id="cell137"></td>           
+                <td id="cell138"></td>           
+                <td id="cell139"></td>           
+                <td id="cell140"></td>           
+                <td id="cell141"></td>           
+                <td id="cell142"></td>           
+                <td id="cell143"></td>           
             </tr>
         </table>
     </div>
 
     &nbsp;
 
-    <h2>Notes & Sources</h2>
+    <h2>Final Thoughts, Notes & Sources</h2>
+
+    <p>And that's a wrap.</p>
+
+    <p>After sifting through a heap of data, my key takeaways are:</p>
+    <ul>
+        <li>It's hard (perhaps impossible) to predict which asset class will be the best performer in the future. There doesn't seem to be a rhyme or reason to the annual rankings</li>
+        <li>Investment returns are far more reliable if you have a long time horizon. The likelihood of losing money is much greater if you're investing over a 1-year period rather than a 5, 10, or 20-year period</li>
+        <li>Diversification has clear benefits. Allocating a portion of your portfolio towards bonds will cushion your losses in years when stocks tumble.</li>
+    </ul>
+
+    <p>All in all, it's my firm belief that the optimal investing strategy comes down a few simple steps -- <a href="https://themeasureofaplan.com/a-blueprint-for-building-wealth/" rel="noopener" target="_blank">invest in a diversified passive portfolio</a>, stay invested in the long-term, and re-balance when necessary.</p>
+
+    &nbsp;
+    &nbsp;
+
+    <p>---</p>
 
     <p>The periodic table format was created by <a href="https://www.callan.com/periodic-table/" rel="noopener" target="_blank">Jay Kloepfer of Callan</a> in 1999.</p>
 
-    <p>Data was sourced from Yahoo Finance, Vanguard, iShares, and the Bogleheads forum.</p>
+    <p>Data was sourced from Yahoo Finance, Vanguard, iShares, Libra Investment Management, and the Bogleheads forum.</p>
 
     <p>All of the data used in this article can be <a href="https://drive.google.com/drive/u/0/folders/1jPFKOJStuLhd3L9G4vygpw9WZ2wOWxMo" rel="noopener" target="_blank">downloaded here in spreadsheet form</a>.</p>
 
