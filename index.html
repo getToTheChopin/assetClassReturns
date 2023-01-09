@@ -8,7 +8,7 @@
 <body>
     <h1>Historical Investment Returns by Asset Class</h1>
 
-    <p>This analysis covers historical investment returns by asset class (from 1985 to 2022) for a wide set of investment types -- stocks, bonds, and beyond.</p>
+    <p>This analysis covers historical investment returns by asset class (from 1985 to 2022) for a wide set of investments -- including stocks / bonds in the U.S., Canada, and beyond.</p>
     <p>We'll dig into questions such as:</p>
     <ul>
         <li>What were the best (and worst) investments of 2022?</li>
@@ -117,7 +117,7 @@
             <tr>
                 <td id="assetDescription11" class="assetDescriptionCell">REIT</td>
                 <td>VGSLX</td>
-                <td id="descriptionColumn">Invests in real estate investment trusts — companies that purchase office buildings, hotels, and other property</td>
+                <td id="descriptionColumn">Invests in real estate investment trusts - companies that purchase office buildings, hotels, and other property</td>
                 <td>~200 REITS</td>
                 <td>4</td>
             </tr>
@@ -158,9 +158,10 @@
     &nbsp;
 
     <p>It's no easy feat to pick the winner in a given year. The asset class rankings appear to be randomly tossed about over time, with the top performer in one year often falling down to the middle or bottom of the table in the next year.</p>
+    <p>11 out of 12 of the asset classes have been a top performer in at least 1 year on record (high yield US bonds being the odd man out). On the flip side, 9 out of 12 of the asset classes have been the worst performer at some stage (Canadian stocks, Canadian bonds, and high yield US bonds being the only assets to avoid the dishonour).</p>
 
     <p>Now the same data is presented, but in a more traditional line chart format. While the periodic table format above does a good job of showing the ranked order (which asset class was first, second, third...), the chart below helps us to visualize the absolute values and the gap between asset classes (how much better the first asset was compared to the second).</p>
-    <p>Click the asset class labels in the chart legend to toggle them on/off from being displaying.</p>
+    <p>Click the asset class labels in the chart legend to toggle them on/off from being displayed.</p>
 
     <div id="allReturnsLineChartDiv">
         <canvas id="allReturnsLineChart"></canvas>
@@ -216,6 +217,21 @@
     <div id="singleYearChartDiv">
         <canvas id="singleYearChart"></canvas>
     </div>
+
+    &nbsp;
+    <h2>The Best and Worst Investments of 2022</h2>
+
+    <p>2022 was a topsy-turvy and primarily painful year for investors:</p>
+    <ul>
+        <li>All 12 of our tracked asset classes declined in 2022 (on a real total return basis)</li>
+        <li>The biggest driver of these losses was red-hot inflation -- with roughly 7% inflation over the year -- spurring stern central bank responses via interest rate hikes</li>
+        <li>An investment in cash (through U.S. T-bills) was the top performing asset of 2022. However, the real total return was still a decline of 5.2%</li>
+        <li>Real estate (through REITs) was the worst investment of 2022, with a loss of 31.1%. Higher mortgage rates and commercial real estate vacancies drove the significant decline</li>
+        <li>2022 saw stocks and bonds drop hand-in-hand by roughly 20%, much to the despair to traditional 60/40 investors</li>
+        <li>Canadian stocks offered relative respite for investors, declining by "only" 11.9%</li>
+    </ul>
+
+    <p>I hope you'll join me in offering best wishes towards a sunnier 2023.</p>
 
     &nbsp;
 
@@ -292,7 +308,7 @@
 
     &nbsp;
 
-    <h2>Correlations Between Asset Class Investment Returns</h2>
+    <h2>Correlations Between Investment Returns by Asset Class</h2>
 
     <p>The chart below shows the correlation level between each pair of asset classes, over the whole analysis period.</p>
     <p>The values shown are correlation coefficients (a.k.a., Pearson's R values) that measure the strength of the relationship between each pair of asset classes. A value of 1 indicates a strong positive relationship; a value of -1 indicates a strong negative relationship; a value of 0 indicates no relationship between the two asset clsses.</p>
